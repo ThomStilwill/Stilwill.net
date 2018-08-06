@@ -29,7 +29,11 @@
             "styles": [
               "src/styles/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+                "libs/jquery-3.2.1.slim.min.js",
+                "libs/popper.min.js",
+                "libs/bootstrap.min.js"
+              ]
           },
           "configurations": {
             "production": {
