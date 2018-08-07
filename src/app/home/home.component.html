@@ -2,16 +2,17 @@
   <div class="row">
       <div class="col-6">
           <div id="clock">
-              <div id="time" class="resize">{{now | date : 'shortTime'}}</div>
-              <div id="seconds">
-                  <span id="spacer">
+              <div id="time" resize>{{now | date : 'shortTime'}}</div>
+              <div id="seconds" [style.width.px]="secondsBarWidth">
+                  <span id="spacer" [style.width.px]="spacerWidth">
                   </span>
-                  <span id="tick">
+                  <span id="tick" [style.width.px]="tickSize" [style.height.px]="tickSize">
+                    {{now | date : 's'}}
                   </span>
               </div>
-              <div id="day" class="resize">{{now | date : 'EEEE'}}</div>
-              <div id="date" class="resize">{{now | date : 'longDate'}}</div>
-              <span id="second"></span>
+              <div id="day" resize>{{now | date : 'EEEE'}}</div>
+              <div id="date" resize>{{now | date : 'longDate'}}</div>
+              
           </div>
       </div>
       <div class="col-6">
@@ -19,8 +20,7 @@
               <ul>
                   <li *ngFor="let link of links">
                       <a *ngIf="link.href" href="{{link.href}}" target="_blank"> {{link.title}} </a>
-                      <div *ngIf="link.linebreak">&nbsp;---</div>
-
+                      <div *ngIf="link.linebreak">&nbsp;</div>
                   </li>
               </ul>
           </div>

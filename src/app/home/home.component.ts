@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Link } from './link';
-import * as config from './config.json';
+import config from './config.json';
 
 @Component({
   selector: 'tcs-home',
@@ -9,21 +9,35 @@ import * as config from './config.json';
 })
 export class HomeComponent implements OnInit {
 
-  links: Array<Link> = new Array<Link>();
+  links: Link[];
   now: Date;
+  tickSize: number;
+  spacerWidth: number;
+  secondsBarWidth: number;
 
   constructor() {
     this.loadlinks();
-    this.now = new Date();
   }
 
   ngOnInit() {
+    setInterval(()=> {this.getDate(); },500); 
   }
 
   loadlinks() {
-    this.links.push(new Link('Angular', 'http://angular.io'));
-    this.links.push(new Link('Scotch.io', 'http://scotch.io'));
-    this.links.push(new Link('Bootstrap', ''));
+    this.links = config.links;
   }
+  
+  getDate(){
+    this.now = new Date();
 
+    let width = document.getElementById('clock').clientWidth;
+
+    let secondWidth = Math.floor(width / 60);
+    
+    let spacer = this.now.getSeconds() * secondWidth;
+
+    this.secondsBarWidth = secondWidth;
+    this.spacerWidth = spacer;
+    this.tickSize = secondWidth * 2;
+  }
 }

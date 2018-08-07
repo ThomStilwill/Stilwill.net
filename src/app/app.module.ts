@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { DevelopmentComponent } from './development/development.component';
+import { ResizeDirective } from './directives/resize.directive';
+import { Code } from './services/code';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,15 @@ import { DevelopmentComponent } from './development/development.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    DevelopmentComponent
+    DevelopmentComponent,
+    ResizeDirective
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [Code],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

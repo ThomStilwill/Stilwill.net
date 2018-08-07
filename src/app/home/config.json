@@ -18,15 +18,11 @@
       "href": "http://www.movies.com/new-releases"
     },
     {
-      "title": "News",
+      "title": "News 3",
       "href": "http://www.wfsb.com"
     },
     {
-      "break": " "
-    },
-    {
-      "title": "Liberty Bank",
-      "href": "https://liberty-bank.com"
+      "linebreak": " "
     },
     {
       "title": "Amazon",
