@@ -1,0 +1,225 @@
+{
+
+  "links": [
+    {
+      "title": "Weather",
+      "href": "http://www.intellicast.com/Local/Weather.aspx?location=USCT0169"
+    },
+    {
+      "title": "Power Outages",
+      "href": "https://www.eversource.com/clp/outage/outagemap.aspx"
+    },
+    {
+      "title": "Plainville Town",
+      "href": "http://www.plainvillect.com"
+    },
+    {
+      "title": "Movies",
+      "href": "http://www.movies.com/new-releases"
+    },
+    {
+      "title": "News",
+      "href": "http://www.wfsb.com"
+    },
+    {
+      "break": " "
+    },
+    {
+      "title": "Liberty Bank",
+      "href": "https://liberty-bank.com"
+    },
+    {
+      "title": "Amazon",
+      "href": "http://www.amazon.com"
+    },
+    {
+      "title": "Hulu",
+      "href": "http://www.hulu.com"
+    },
+    {
+      "title": "Netflix",
+      "href": "http://www.netflix.com"
+    }
+  ],
+  "menus": [
+    {
+      "title": "Google",
+      "menus": [
+        {
+          "title": "eMail",
+          "href": "https://mail.google.com"
+        },
+        {
+          "title": "Calendar",
+          "href": "https://calendar.google.com/calendar/r?tab=mc"
+        },
+        {
+          "title": "Drive",
+          "href": "https://drive.google.com"
+        },
+        {
+          "title": "Google+",
+          "href": "https://plus.google.com"
+        },
+        {
+          "title": "Calendar",
+          "href": "https://calendar.google.com/calendar/r?tab=mc"
+        },
+        {
+          "title": "Play Store",
+          "href": "https://play.google.com"
+        },
+        {
+          "title": "Keep",
+          "href": "https://keep.google.com"
+        },
+        {
+          "title": "Photos",
+          "href": "https://photos.google.com"
+        }
+      ]
+    },
+    {
+      "title": "Links",
+      "menus": [
+        {
+          "group": "Development"
+        },
+        {
+          "title": "JQuery-UI",
+          "href": "http://jqueryui.com"
+        },
+        {
+          "title": "Angularjs",
+          "href": "https://angularjs.org"
+        }
+      ]
+    },
+    {
+      "title": "Tools",
+      "menus": [
+        {
+          "title": "About",
+          "view": "about"
+        },
+        {
+          "title": "Clock",
+          "view": "clock"
+        },
+        {
+          "title": "Tags",
+          "view": "tags"
+        },
+        {
+          "title": "Log",
+          "view": "log"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "Javascript",
+      "color": "gold",
+      "tags": [
+        {
+          "title": "JQuery",
+          "url": "jquery.com"
+        },
+        {
+          "title": "AngularJS",
+          "url": "Angularjs.org"
+        },
+        {
+          "title": "JQuery UI",
+          "url": "jqueryui.com"
+        },
+        {
+          "title": "Mozilla",
+          "url": "developer.mozilla.org/en-US"
+        },
+        {
+          "title": "Scotch IO",
+          "url": "scotch.io"
+        }
+      ]
+    },
+    {
+      "name": "Track",
+      "color": "gray",
+      "tags": [
+        {
+          "title": "APR",
+          "url": "goapr.com"
+        },
+        {
+          "title": "Neuspeed",
+          "url": "Neuspeed.com"
+        },
+        {
+          "title": "Eibach",
+          "url": "Eibach.com"
+        },
+        {
+          "title": "VW Vortex",
+          "url": "vwvortex.com"
+        }
+      ]
+    },
+    {
+      "name": "RC",
+      "color": "CornflowerBlue",
+      "tags": [
+        {
+          "title": "Horizon Hobby",
+          "url": "HorizonHobby.com"
+        },
+        {
+          "title": "Helifreak",
+          "url": "www.helifreak.com"
+        },
+        {
+          "title": "Run Ryder",
+          "url": "runryder.com"
+        },
+        {
+          "title": "Amain Hobbies",
+          "url": "amain.com"
+        }
+      ]
+    },
+    {
+      "name": "General",
+      "color": "DarkGreen",
+      "tags": [
+        {
+          "title": "Gmail",
+          "url": "mail.google.com"
+        },
+        {
+          "title": "Calendar",
+          "url": "calendar.google.com"
+        },
+        {
+          "title": "Docs",
+          "url": "docs.google.com"
+        }
+      ]
+    },
+    {
+      "name": "Important",
+      "color": "DarkRed",
+      "tags": [
+        {
+          "title": "Phaselineblue",
+          "url": "Phaselineblue.com",
+          "weight": 1.2
+        },
+        {
+          "title": "Stilwill.net",
+          "url": "stilwill.net/dashboard"
+        }
+      ]
+    }
+  ]
+}
