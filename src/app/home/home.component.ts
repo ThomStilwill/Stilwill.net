@@ -38,6 +38,6 @@ export class HomeComponent implements OnInit {
 
     this.secondsBarWidth = secondWidth;
     this.spacerWidth = spacer;
-    this.tickSize = secondWidth * 2;
+    this.tickSize = secondWidth * 5;
   }
 }
