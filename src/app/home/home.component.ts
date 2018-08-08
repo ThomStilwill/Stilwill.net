@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Link } from './link';
 import config from './config.json';
 
@@ -7,7 +7,7 @@ import config from './config.json';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
 
   links: Link[];
   now: Date;
@@ -20,21 +20,26 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    setInterval(()=> {this.getDate(); },500); 
+    setInterval(() => {this.getDate(); }, 500);
+  }
+
+  ngAfterViewInit(): void {
+    // Hack - find a better way!
+    setTimeout(() => {
+        window.dispatchEvent(new Event('resize'));
+    }, 500);
   }
 
   loadlinks() {
     this.links = config.links;
   }
-  
-  getDate(){
+
+  getDate() {
     this.now = new Date();
 
-    let width = document.getElementById('clock').clientWidth;
-
-    let secondWidth = Math.floor(width / 60);
-    
-    let spacer = this.now.getSeconds() * secondWidth;
+    const width = document.getElementById('clock').clientWidth;
+    const secondWidth = Math.floor(width / 60);
+    const spacer = this.now.getSeconds() * secondWidth;
 
     this.secondsBarWidth = secondWidth;
     this.spacerWidth = spacer;

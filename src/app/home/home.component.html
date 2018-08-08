@@ -2,17 +2,21 @@
   <div class="row">
       <div class="col-6">
           <div id="clock">
-              <div id="time" resize>{{now | date : 'h:mm a'}}</div>
+              <div id="time" tcs-resize>{{now | date : 'h:mm a'}}</div>
               <div id="seconds" [style.width.px]="secondsBarWidth">
                   <span id="spacer" [style.width.px]="spacerWidth">
                   </span>
-                  <span id="tick" [style.width.px]="tickSize" [style.height.px]="tickSize" [style.border-radius.px]="ticksize" [style.font-size.px]="ticksize">
+                  <span id="tick" [style.width.px]="tickSize"
+                                  [style.height.px]="tickSize"
+                                  [style.line-height.px]="tickSize"
+                                  [style.border-radius.px]="tickSize*.2"
+                                  [style.font-size.px]="tickSize*.7" >
                     {{now | date : 's'}}
                   </span>
               </div>
-              <div id="day" resize>{{now | date : 'EEEE'}}</div>
-              <div id="date" resize>{{now | date : 'longDate'}}</div>
-              
+              <div id="day" tcs-resize>{{now | date : 'EEEE'}}</div>
+              <div id="date" tcs-resize>{{now | date : 'longDate'}}</div>
+
           </div>
       </div>
       <div class="col-6">
