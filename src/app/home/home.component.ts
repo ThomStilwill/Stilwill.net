@@ -37,7 +37,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
   getDate() {
     this.now = new Date();
 
-    const width = document.getElementById('clock').clientWidth;
+    const clock = document.getElementById('clock');
+    if (!clock) {
+      return ;
+    }
+
+    const width = clock.clientWidth;
     const secondWidth = Math.floor(width / 60);
     const spacer = this.now.getSeconds() * secondWidth;
 
