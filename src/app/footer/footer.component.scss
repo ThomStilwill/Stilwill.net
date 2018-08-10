@@ -1,0 +1,23 @@
+
+  .footer-left
+  {
+    position: absolute!important;
+    left:0;
+
+    button{min-width:0px;}
+  }
+
+
+  .footer-right
+  {
+    position: absolute!important;
+    right:0;
+  }
+
+  .footer-center
+  {
+    position:absolute;
+    left:100px;
+    right: 100px;
+    text-align: center;
+  }
