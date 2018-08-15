@@ -1,3 +1,5 @@
+@import 'variables';
+
 $header-height: 56px;
 $footer-height: 36px;
 
@@ -28,7 +30,8 @@ footer {
 }
 
 .navbar-dark .navbar-brand {
-  color: gold;
+  color: $header-hilight;
+
 }
 
 .navbar {

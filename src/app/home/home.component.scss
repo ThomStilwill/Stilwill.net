@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 #links {
 
   ul {
@@ -60,19 +62,15 @@
     }
 
     #tick {
-      background-color: navy;
-      color: white;
-      
-      display: inline-block;
-      //margin-top: 5px;
-      //width: 4px;
-      //height: 4px;
 
-      //padding: 2px;
+      display: inline-block;
       text-align: center;
       line-height: 1;
       height: 100%;
       border-radius: 4px;
+      
+      background-color: $header-color;
+      color: $header-hilight;
     }
   }
 
